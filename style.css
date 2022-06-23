@@ -17,6 +17,80 @@ h1 {
     width: 100%;
     font-family: 'Stoke', serif;
     font-style: oblique;
+    -webkit-text-stroke: 1px black;
+    /*color: white;*/
+    text-shadow:
+       3px 3px 0 #fff,
+      -1px -1px 0 #fff,  
+       1px -1px 0 #fff,
+      -1px 1px 0 #fff,
+       1px 1px 0 #fff;
+}
+h2{
+    color: rgb(0, 0, 0);
+    text-shadow: blue;
+    text-transform: none;
+    letter-spacing: 0.01em;
+    font-weight: bold;
+}
+.title-word {
+    animation: color-animation 4s linear infinite;
+}
+  
+.title-word-1 {
+    --color-1: #DF8453;
+    --color-2: #3D8DAE;
+    --color-3: #E4A9A8;
+}
+  
+.title-word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+}
+  
+.title-word-3 {
+    --color-1: #ACCFCB;
+    --color-2: #E4A9A8;
+    --color-3: #ACCFCB;
+}
+  
+.title-word-4 {
+    --color-1: #3D8DAE;
+    --color-2: #DF8453;
+    --color-3: #E4A9A8;
+}
+  
+@keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+}
+  
+  /* Here are just some visual styles. 🖌 */
+  
+.container {
+    display: grid;
+    place-items: center;  
+    text-align: center;
+    height: 100px  
+}
+  
+.title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    text-transform: uppercase;-webkit-text-stroke: 1px black;
+    text-shadow:
+        3px 3px 0 #000,
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,
+       -1px 1px 0 #000,
+        1px 1px 0 #000;
 }
 
 h3 {
@@ -25,4 +99,45 @@ h3 {
     text-align: center;
     text-transform: none;
     letter-spacing: 0.01em;
+    background-color: whitesmoke;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 60px;
+  -webkit-text-stroke: 1px black;
+   color: white;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+.waviy span {
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+  
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
 }
