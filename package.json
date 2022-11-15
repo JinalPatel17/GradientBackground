@@ -1,0 +1,19 @@
+{
+  "name": "warheadupdated",
+  "version": "1.0.0",
+  "description": "This is just to learn npm no need to enter at master.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JinalPatel17/GradientBackground.git"
+  },
+  "author": "Jinal (hunter)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JinalPatel17/GradientBackground/issues"
+  },
+  "homepage": "https://github.com/JinalPatel17/GradientBackground#readme"
+}
